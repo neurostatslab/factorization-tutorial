@@ -148,7 +148,7 @@ end
 % hint: notice how coeff and score correspond to W and H (check the sizes)
 
 k=4;
-% [coeff,score,latent] = pca(data.data_normed,'NumComponents',k);
+[coeff,score,latent] = pca(data.data_normed,'NumComponents',k);
 
 
 [score_ind_sorted,coeff_ind_sorted]=sort_and_plot_wh_x(data.data_normed,score,coeff');
